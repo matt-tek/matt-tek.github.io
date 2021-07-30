@@ -1,0 +1,46 @@
+body {
+    background-color:#2A2D34;
+}
+
+header {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    background: #738290 fixed no-repeat;
+}
+
+section#about h1{
+    display: flex;
+    justify-content: center;
+    background: #FF8F1C;
+    width: 250px;
+    height: 50px;
+    margin-left: 200px;
+    text-transform: uppercase;
+}
+
+section#about p{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+section#skill h1{
+    display: flex;
+    justify-content: center;
+    background: #FF8F1C;
+    width: 420px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 200px;
+    text-transform: uppercase;
+}
+
+section#skill ul {
+    margin-top: 50px;
+}
+section#skill li {
+    display: flex;
+    margin-left: 160px;
+}
