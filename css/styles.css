@@ -1,10 +1,19 @@
+:root {
+    --background: #160F29;
+    --blue1: #246A73;
+    --blue2: #368F8B;
+    --font-color: #FFFFFF;
+    --call-to-action: #ed254e
+    --black: #000000;
+}
+
 body {
-    background-color:#2A2D34;
+    background-color: var(--background)
 }
 
 header {
     display: flex;
-    height: 800px;
+    height: 10em;
     justify-content: center;
     align-items: center;
     background: #738290 fixed no-repeat;
@@ -13,7 +22,7 @@ header {
 section#about h1{
     display: flex;
     justify-content: center;
-    background: #FF8F1C;
+    background: var(--blue2);
     width: 250px;
     height: 50px;
     margin-left: 200px;
@@ -29,7 +38,7 @@ section#about p{
 section#skill h1{
     display: flex;
     justify-content: center;
-    background: #FF8F1C;
+    background: var(--blue2);
     width: 420px;
     height: 50px;
     margin-top: 50px;
