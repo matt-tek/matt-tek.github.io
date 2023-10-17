@@ -5,11 +5,19 @@
     --font-color: #FFFFFF;
     --call-to-action: #ed254e
     --black: #000000;
-
+    --card-margin: 10px;
+    --text-indentation: 10px;
+    --item-margin: 10px;
+    --item-margin-left: 25px;
+    --item-border-radius: 20px;
+    --img-border-radius: 90px;
+    --svg-height: 25px;
+    --svg-width: 25px;
+    --text-margin: 10px;
 }
 
 body {
-    background-image: url('../img/header_bg.jpg');
+    background: url('../img/header_bg.jpg') fixed no-repeat;
     font-family: 'Courier New', Courier, monospace;
     color: var(--font-color);
     display: flex;
@@ -20,7 +28,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background: #738290 fixed no-repeat; */
 }
 
 footer {
@@ -39,59 +46,144 @@ footer {
 
 .top-bar {
     background-color: var(--background);
+    display: flex;
+    margin-top: var(--card-margin);
+    margin-bottom: var(--card-margin);
+    border-radius: var(--item-border-radius);
 }
 
 .profile-img {
     width: 150px; 
     height: 150px;
+    border-radius: var(--img-border-radius);
 }
 
-.description {
-    background-color: var(--blue1);
+.description-container {
+    background-color: var(--blue2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--card-margin);
+    margin-left: var(--card-margin);
+    border-radius: var(--item-border-radius);
+    text-wrap: wrap;
+    padding: 10px;
+}
+
+.description-container p {
+    margin: var(--text-margin)
 }
 
 .main-body {
-    background-color: white;
     display: flex;
     justify-content: space-around;
 }
 
 .left-bar {
-    background-color: var(--background);
+    width: 300px;
 }
 
-.links {
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: var(--item-border-radius);
+    margin-bottom: var(--card-margin);
     background-color: var(--blue2);
 }
 
-.language {
-    background-color: var(--blue2);
+.container-item {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin: var(--item-margin);
+    margin-left: var(--item-margin-left);
 }
 
-.other {
-    background-color: var(--blue2);
+.container-item img {
+    width: var(--svg-width);
+    height: var(--svg-height);
 }
 
-.right-bar {
-    background-color: var(--background);
+.container-item p {
+    margin: auto;
+    margin-left: 25px;
 }
 
-.xp-pro {
+.links-container div a {
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 4px;
+    color: var(--font-color);
+}
+
+.language-container {
     background-color: var(--blue2);
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    border-radius: var(--item-border-radius);
+    margin-bottom: var(--card-margin);
 }
 
-.courses {
+.language-container table {
+    margin-left: var(--item-margin);
+    margin-right: var(--item-margin);
+    margin-bottom: var(--item-margin);
+    margin-top: var(--item-margin);
+}
+
+.other-container {
     background-color: var(--blue2);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--item-border-radius);
+    padding: 5px;
 }
 
-.competencies {
+/* .right-bar {
+    background-color: var(--background);
+} */
+
+.xp-pro-container {
     background-color: var(--blue2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--card-margin);
+    margin-left: var(--card-margin);
+    border-radius: var(--item-border-radius);
+    text-wrap:wrap;
+    text-indent: var(--text-indentation);
 }
 
+.courses-container {
+    background-color: var(--blue2);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--item-border-radius);
+    margin-bottom: var(--card-margin);
+    margin-left: var(--card-margin);
+}
 
+.competencies-container {
+    background-color: var(--blue2);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--item-border-radius);
+    margin-bottom: var(--card-margin);
+}
 
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: var(--item-margin);
+    margin-bottom: var(--item-margin);
+}
 
+.language-table tr td:first-child {
+    font-weight: bold;
+}
 
+.text-item {
+    margin: var(--text-margin);
+}
